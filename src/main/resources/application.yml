@@ -1,0 +1,29 @@
+zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
+  routes:
+    apiauth:
+      path: /api/**
+      url: http://localhost:8080/
+    stats:
+      path: /stats/**
+      url: http://localhost:9999/
+
+
+server:
+  port: 8080
+spring:
+  thymeleaf:
+    cache: false
+
+app:
+  oauth2:
+    isDelegated: false
+    url: https://url/
+  api:
+    url: http://localhost:8080/
+  front:
+    url: http://localhost/
+  matomo:
+    url: http://localhost:9999/
+    token: insert_token
+    idSite: insert_id

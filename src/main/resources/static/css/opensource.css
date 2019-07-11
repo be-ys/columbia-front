@@ -1,0 +1,165 @@
+.logo a {
+    width: 100px;
+    height: 38px;
+}
+
+.navbar-nav .nav-link {
+    padding: 0;
+}
+
+.nav-item {
+    padding: 0 0.7rem;
+}
+
+.navbar-nav .nav-link {
+    padding : 0;
+}
+
+.navbar ul li a:focus, .navbar ul li a:active {
+    background: none;
+}
+
+.menu-user .dropdown-menu {
+    background: #2C3E50;
+    width: 350px;
+}
+
+.login input[type="text"], .login input[type="password"], .login select {
+    background: #2F5B74;
+    color: #fff;
+    border: #000;
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+}
+
+.login input[type="submit"] {
+    width: 100%;
+}
+
+.centered.text-center.forgotpasswordlink, .centered.text-center.forgotpasswordlink:hover {
+    left: 50%;
+    width: 100%;
+    margin-left: calc(50% - 69px);
+    background: none !important;
+}
+
+.notification-error {
+    background: #ff6666;
+}
+
+.notification-primary {
+    background: #1f76b0;
+}
+
+.col-md-12 {
+    margin-bottom:20px;
+}
+
+.card-title {
+    font-size: 21px;
+    padding: 0;
+    margin: 0;
+    color: #f7f7f7;
+}
+
+.card-header {
+    background: #2C3E50;
+}
+
+.no-border {
+    border: none;
+}
+
+h3, .h3 {
+    font-size: 16px;
+}
+
+.label {
+    background: none;
+    color: #7775ff;
+    border-radius: 7px;
+    padding: 5px 12px;
+}
+
+.label-secondary {
+    padding: 3px 12px;
+    background: #333;
+    color: #f7f7f7;
+}
+
+.label-default {
+    color: #333;
+    background: #efefef;
+}
+
+.card-body .defs {
+    margin-top: 20px;
+}
+
+.synonyms, .antonyms, .related {
+    color: #333;
+}
+
+.card-result a {
+    color:#333;
+}
+
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.card-header {
+    border-bottom: 2px solid #fff;
+    color: #f7f7f7;
+}
+
+.card-result {
+    margin: 0;
+}
+
+.card-result a {
+    color : #f7f7f7;
+}
+
+.history-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.history-header .card-title {
+    font-size: 17px;
+}
+
+.history-header sub {
+    color: #f7f7f7;
+}
+
+.card-actions ul {
+    list-style: none;
+    color: #ccc;
+}
+
+.dz-default {
+    padding: 30px;
+    border-radius: 10px;
+    border: 4px dashed;
+    text-align: center;
+}
+
+.list-group-dividered {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #777;
+    height: 600px;
+}
+
+.list-group-dividered li {
+    padding: 4px 20px;
+    border-bottom: 1px solid;
+    margin: 0;
+}
