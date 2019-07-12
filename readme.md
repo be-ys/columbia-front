@@ -9,8 +9,8 @@ Finally, it’s important to notice that for several reasons (keep it simple for
 ## Through Docker
 1.	Download the file `Dockerfile` and `src/ressources/application.yml` , and copy them in a folder.
 2.	Edit the `application.yml` file with your own configuration
-3.	Run the Dockerfile: `docker build --no-cache -t=”columbia_front:latest” ./`
-4.	Create and run a container: `docker create --name=”columbia_front” -p 80:80 columbia_front:latest` 
+3.	Run the Dockerfile: `docker build --no-cache -t="columbia_front:latest" ./`
+4.	Create and run a container: `docker create --name="columbia_front" -p 80:80 columbia_front:latest` 
 ## Standalone (through a release)
 1.	Download the jarfile
 2.	Download file `src/ressources/application.yml`, edit him and copy him on the same directory than the jarfile
