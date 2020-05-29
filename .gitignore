@@ -177,3 +177,10 @@ Temporary Items
 .directory
 
 /deploy/roles
+
+*/target/
+*/.idea/
+*/.iml
+*/.idea
+*/package-lock.json
+*/node_modules/
