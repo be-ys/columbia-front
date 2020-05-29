@@ -7,19 +7,23 @@ Finally, it’s important to notice that for several reasons (keep it simple for
 
 # Installation
 ## Through Docker
-1.	Download the file `Dockerfile` and `src/ressources/application.yml` , and copy them in a folder.
-2.	Edit the `application.yml` file with your own configuration
-3.	Run the Dockerfile: `docker build --no-cache -t="columbia_front:latest" ./`
-4.	Create and run a container: `docker create --name="columbia_front" -p 80:80 columbia_front:latest` 
+1. Download the whole `docker` directory. It will includes the Dockerfile for both front and middleware project.
+2. Edit the `.env` file in `docker/front`, and the `application.properties` file in `docker/middleware` with you own parameters
+3. Run both Dockerfile: `docker build -t="columbia_front:latest" ./front && docker build -t="columbia_middlefront:latest" ./middleware` 
+4. Create and run both containers: `docker run -d --name="columbia_front" -p 8888:80 columbia_front:latest && docker run -d --name="columbia_middlefront" -p 8088:8080 columbia_middlefront:latest`
 ## Standalone (through a release)
-1.	Download the jarfile
-2.	Download file `src/ressources/application.yml`, edit him and copy him on the same directory than the jarfile
-3.	Run `java -jar ./jarfile.jar`
+1. Download the jarfile and the .tar.gz file
+2. Put the content of the .tar.gz file in a NGINX/Apache2/... webserver
+3. Run `java -jar ./jarfile.jar`
 ## Standalone (building)
 1.	Download the repository
-2.	Edit the configuration as you like
-3.	Compile the project (main class: `com.almerys.columbia.front.FrontApplication`)
-4.	In folder “target”, you will find and .jar version of the app. Run with `java -jar ./jarfile.jar`
+2.	For the middleware :
+    * Edit the configuration as you like
+	* Compile the project (main class: `com.almerys.columbia.front.FrontApplication`)
+	* In folder “target”, you will find and .jar version of the app. Run with `java -jar ./jarfile.jar`
+3. For the front :
+   * Edit the .env as you like
+   * `npm install && npm run serve`. 
 
 # Acknowledgment
 Program by [@Artheriom](https://github.com/Artheriom/) and [@leChaps](https://github.com/lechaps), created for [@be-ys](https://github.com/be-ys). This program was built for internal usage and was ported to opensource. For this reason, some parts of the code may be different than the original.

@@ -1,0 +1,19 @@
+html {
+    background-image: url("https://images-assets.nasa.gov/image/0300307/0300307~orig.jpg");
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    background: none;
+}
+
+.card, #footer {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.card .card {
+    background:none;
+}
